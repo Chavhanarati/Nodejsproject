@@ -1,0 +1,19 @@
+.myFirstClass{
+    background-color: brown;
+    color: palegreen;
+}
+.mySecondClass {
+    background-color: seagreen;
+    color: sienna;
+}
+.myThirdClass {
+    background-color: yellowgreen;
+    color: chartreuse;
+}
+
+.myImageData{
+    display: inline;
+    border: 1px solid red;
+   
+    
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Product.js"></script>
+    <style>
+        body {
+            background-image: url('https://wallpaperset.com/w/full/f/6/7/142016.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+           }
+    </style>
+
+</head>
+<body>
+    <h2>Add Product Details</h2>
+    <form>
+        <label>PName</label>
+        <input type="text" id="product_name"/><br/>
+        <label>PImage</label>
+        <input type="text" id="product_image"/><br/>
+        <label>PPrice</label>
+        <input type="text" id="product_price"/><br/>
+        <label>Quantity</label>
+        <input type="Pqty" id="product_qty"/><br/>
+        <input type="button" value="Store Product Info" onclick="storeProductInfo()"/>
+        <input type="reset" value="reset"/>
+    </form>
+    
+    <span id="msg" style="color:red"> </span>
+</body>
+</html>

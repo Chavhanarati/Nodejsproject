@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js"></script>
+    <style>
+        body {
+                background-image: url('https://cryptooof.com/wp-content/uploads/2018/10/Trade-Pharma-Network-Marketplace-Linking-Pharma-and-Healthcare.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+             }
+   </style>
+
+</head>
+<body>
+    <h2>Account Create</h2>
+    <form>
+        <label>Emailid</label>
+        <input type="email" id="emailid"/><br/>
+        <label>Password</label>
+        <input type="password" id="password"/><br/>
+        <label>TypeOfUser</label>
+        <input type="radio" name="typeofuser" value="admin"/>Admin
+        <input type="radio" name="typeofuser" value="customer"/>Customer<br/>
+        <input type="button" value="SignUp" onclick="signUp()"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <a href="index.html">Login</a>
+    <span id="msg" style="color:red"></span>
+</body>
