@@ -82,8 +82,7 @@ let findOrderByCustomerId = async (request,response)=> {
         if(result==null){
             response.json({"msg":"Record not present with id as "+customer_id})
         }else {
-            // response.json(result);
-            response.json({"msg":"Record present","order":result});
+            response.json(result);
         }
         }catch(ex){
             response.json({"msg":"Error generated "+ex});

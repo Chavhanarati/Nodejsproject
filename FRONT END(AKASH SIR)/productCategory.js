@@ -134,6 +134,10 @@ function findAllProductCategory(){
         if(data.length==0){
             result.innerHTML="No ProductCategory present "
         }else {
+            var imgTag=`<img src=${
+                data.pimage
+            }>`
+
             result.innerHTML = data.map(obj=>"<br>Image: "+obj.image+"<br>Disease Name: "+obj.disease_name).join("<br/>");  
         }
     

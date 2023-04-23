@@ -58,8 +58,8 @@ let deleteCustomerByFName = async (reqeust,response)=> {
         if(result==null){
             response.json({"msg":"Record not present with name as "+custFname})
         }else {
-            // response.json(result);
-            response.json({"msg":"Record present","customer":result});
+            response.json(result);
+            // response.json({"msg":"Record present","customer":result});
         }
         }catch(ex){
             response.json({"msg":"Error generated "+ex});

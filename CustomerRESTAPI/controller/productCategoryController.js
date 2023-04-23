@@ -41,13 +41,11 @@ let findAllProductCategory= async(request,response)=> {
 let findProductCategoryBydisease = async (reqeust,response)=> {
     let Cdisease = reqeust.params.disease_name;
     try {
-        let result = await productCategoryModel.findOne({disease_name: Cdisease});
+        let result = await productCategoryModel.find({disease_name: Cdisease});
         if(result==null){
              response.json({"msg":"Record not present with disease as "+Cdisease});
     }else{
         response.json(result);
-        // response.json({"msg":"Record present", ProductCategory :result});
-        // response.json({"msg" :"Record present", "productcategory" : result});
     }
     } catch (ex) {
         response.json({"msg":"Error generated "+ex});

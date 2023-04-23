@@ -23,12 +23,12 @@ let findAllProducts= async(request,response)=> {
 let findProductsByPname = async (reqeust,response)=> {
     let productPname = reqeust.params.product_name;
     try {
-        let result = await productModel.findOne({product_name: productPname});
+        let result = await productModel.find({product_name: productPname});
         if(result==null){
              response.json({"msg":"Record not present with name as "+productPname});
     }else{
-        // response.json(result);
-        response.json({"msg":"Record present","product":result});
+        response.json(result);
+        // response.json({"msg":"Record present","product":result});
 
     }
     } catch (ex) {
